@@ -170,14 +170,14 @@ router.route('/line/:id/infor')
 const Today = new Date();
 const Today_time = Today.format("yyyy/MM/dd hh:mm");
 function prefer_time(timetable){
-    // var starttime = Today_time; //設定開始時間格式 yyyy/mm/dd 00:00:00
-    var starttime = "2021/09/03 10:50"
+    var starttime = Today_time; //設定開始時間格式 yyyy/mm/dd 00:00:00
+    // var starttime = "2021/09/04 10:50"
     var endtime = Today.format("yyyy/MM/dd "+timetable); //設定結束時間格式
     var d1 = new Date(starttime);
     var d2 = new Date(endtime);
     if(Date.parse(starttime).valueOf() < Date.parse(endtime).valueOf()){
         let least_time = parseInt(d2 - d1) / 1000 / 60
-        if(least_time <= 60){
+        if(least_time < 30){
             return least_time;
         }
     } else{ return false; }

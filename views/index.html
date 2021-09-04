@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="/assets/css/time-line-left.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 </head>
 
@@ -150,13 +150,15 @@
                             <div class="card-body">
                                 <div id="nav-tabContent" class="tab-content">
                                     <div id="item-1-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="item-1-1-tab">
-                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                            <label id="time_up" class="btn btn-outline-primary" for="btnradio1">上行</label>
-                                        
-                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                            <label id="time_down" class="btn btn-outline-primary" for="btnradio2">下行</label>
-                                        </div>
+                                        <h4>上行</h4> 
+                                            <h5 id="time_up_01"></h5>
+                                            <h5 id="time_up_02"></h5>
+                                            <spinner class="spinner-border" role="status" display="none"></spinner>
+                                        <hr>
+                                        <h4>下行</h4>
+                                            <h5 id="time_down_01"></h5>
+                                            <h5 id="time_down_02"></h5>
+                                            <spinner class="spinner-border" role="status" display="none"></spinner>
                                     </div>
                                     <div id="item-1-2" class="tab-pane fade pre-scrollable" role="tabpanel" aria-labelledby="item-1-2-tab">
                                         <!-- <h4>相關設施</h4> -->
