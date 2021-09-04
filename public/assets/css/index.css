@@ -1,0 +1,20 @@
+.stations_body{
+    margin: 0px 25px 0px 25px;
+}
+.station_title{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.stations_col{
+    margin: 10px 0 25px 0;
+}
+/* .myfavorite{
+    height: 22px;
+    width: auto;
+    content: url(/assets/img/like.png);
+}
+.myfavorite:hover{
+    height: 22px;
+    width: auto;
+    content: url(/assets/img/heart.png);
+} */
