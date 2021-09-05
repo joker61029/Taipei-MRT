@@ -6,9 +6,9 @@ var station = require("./routes/station");
 var users = require("./routes/users")
 const bcrypt = require('bcrypt');
 const passport = require('passport');
-const flash = require('express-flash');
-const session = require('express-session');
-const methodOverride = require('method-override');
+// const flash = require('express-flash');
+// const session = require('express-session');
+// const methodOverride = require('method-override');
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, '/views')));

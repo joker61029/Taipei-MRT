@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/assets/css/time-line-left.css">
 </head>
 
 <body class="bg-gradient-primary">
@@ -24,21 +23,21 @@
                             <div class="text-center">
                                 <h4 class="text-dark mb-4">創建帳戶</h4>
                             </div>
-                            <form class="user" action="/register" method="POST">
+                            <form class="user" action="/user/register" method="POST">
                                 <!-- <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="id" placeholder="姓氏" name="first_name"></div>
                                     <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="LastName" placeholder="名字" name="last_name"></div>
                                 </div> -->
+                                <div class="form-group"><input class="form-control form-control-user" type="text" id="name" placeholder="使用者名稱" name="name"></div>
                                 <div class="form-group"><input class="form-control form-control-user" type="email" id="email" aria-describedby="emailHelp" placeholder="電子郵件信箱" name="email"></div>
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="password" placeholder="密碼" name="password"></div>
+                                <div class="form-group"><input class="form-control form-control-user" type="password" id="password" placeholder="密碼" name="password">
                                     <!-- <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="password_repeat" placeholder="確認密碼" name="password_repeat"></div> -->
                                 </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">註冊帳號</button>
                                 <hr><a class="btn btn-primary btn-block text-white btn-google btn-user" role="button"><i class="fab fa-google"></i>&nbsp; 使用Google註冊帳戶</a><a class="btn btn-primary btn-block text-white btn-facebook btn-user" role="button"><i class="fab fa-facebook-f"></i>&nbsp; 使用 Facebook註冊帳戶</a>
                                 <hr>
                             </form>
-                            <div class="text-center"><a class="small" href="/forgot-password">忘記密碼？</a></div>
-                            <div class="text-center"><a class="small" href="/login">已經有帳戶了？點我登入！</a></div>
+                            <div class="text-center"><a class="small" href="/user/forgot-password">忘記密碼？</a></div>
+                            <div class="text-center"><a class="small" href="/user/login">已經有帳戶了？點我登入！</a></div>
                         </div>
                     </div>
                 </div>
